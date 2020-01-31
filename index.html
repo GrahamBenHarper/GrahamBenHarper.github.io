@@ -1,1 +1,106 @@
-Hello World!
+<html>
+<head>
+  <script type="text/javascript" src="MathJax/es5/tex-chtml.js"></script>
+  <link rel="stylesheet" href="default.css"/>
+  <title>Graham Harper's Home</title>
+</head>
+
+<body>
+
+<div class="main">
+<div class="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+<!--    <li><a href="publications.html">Publications</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="3dprinting.html">3D Printing</a></li>
+    <li><a href="schedule.html">Schedule</a></li> -->
+  </ul>
+</div>
+
+<div class="content">
+  <h2>Introduction</h2>
+  
+  <table><tr>
+  <td width=70% valign="top">
+    <p>
+      My name is Graham Harper and I am a fifth-year Ph.D. candidate at Colorado State University in the department of Mathematics, and I am actively researching novel finite element methods for elliptic partial differential equations (PDEs).
+    </p>
+
+    <p>
+      My research is focused on the research and development of novel and efficient numerical methods for solving PDEs.
+      This means, in broad terms, my work involves a combination of
+    </p>
+      <ul>
+        <li>Scientific Computing</li>
+        <li>Numerical Analysis</li>
+        <li>Mathematical Modeling</li>
+      </ul>
+
+    <h4>PhD Committee</h4>
+    <p>
+      My advisor is <a href="http://www.math.colostate.edu/~liu/">James Liu</a> and my PhD committee members are
+    </p>
+
+    <ul>
+      <li><a href="http://www.math.colostate.edu/~tavener/">Simon Tavener</a></li>
+      <li><a href="http://www.math.colostate.edu/~bangerth/">Wolfgang Bangerth</a></li>
+      <li><a href="http://www.math.colostate.edu/~yzhou/">Yongcheng Zhou</a></li>
+      <li><a href="http://www.engr.colostate.edu/me/dr-stephen-guzik/">Stephen Guzik</a></li>
+    </ul>
+
+
+    <h4>Publications</h4>
+    <p>
+      My publications have focused on weak Galerkin finite element methods for Darcy flow, Stokes flow, linear elasticity, and poroelasticity.
+      These novel finite element methods redefine differential operators by taking the distributional sense of a derivative and then discretizing both of the \(H^1\) and \(L^2\) spaces.
+      On any polygonal cell \( E \) in a mesh, a <b>discrete weak function</b> \( p \) is assigned one polynomial space \( P_{k_1} \) on the interior of \( E \) and one polynomial space \( P_{k_2} \) for each edge of \( E \).
+      Gradients in the weak form of the PDE are replaced with a <b>discrete weak gradient</b>, denoted by \( \nabla_{w,d} \) (sometimes shortened to \( \nabla_w \)), which maps \( p \) into a space \( W_{\rm{grad}} \).
+      The discrete weak gradient is defined through its action as the solution to a small linear system
+    </p>
+      $$
+        \int_E \nabla_{w,d}p \cdot \mathbf{w}
+      = \int_{\partial E} p^\partial (\mathbf{w} \cdot \mathbf{n})
+      - \int_E p^\circ \nabla\cdot\mathbf{w},
+        \quad\quad \forall \mathbf{w} \in W_{\rm{grad}}.
+      $$
+    <p>
+      To read more about these methods, I recommend reading some of the <a href="https://www.math.colostate.edu/~harper/publications.html">papers I've written</a>.
+    </p>
+
+    <h4>Numerical Software</h4>
+    <p>
+      Computation and software development are integral to my research. All of my numerical computations are performed in Matlab or C++ using either the
+        <a href="https://www.math.colostate.edu/~liu/code.html">Darcy+</a>,
+        <a href="https://www.math.colostate.edu/~liu/code.html">DarcyLite</a>, or
+        <a href="https://www.dealii.org/">deal.II</a> finite element libraries. I am also a contributor to each of these.
+      I then visualize my numerical solutions using VisIt and ParaView.
+    </p>
+
+    <h4>3D Printing</h4>
+    <p>
+      I'm a 3D printing enthausiast and frequently design and print objects, especially those with mathematical significance.
+      Recently I worked with my classmate <a href="https://sites.google.com/view/caseypinckney/">Casey Pinckney</a> to help visualize and 3D print a group that she's working with.
+      To see more about this, look at the <a href="3dprinting.html">3D printing page</a>.
+    </p>
+    
+    <h4>Contact</h4>
+    <p>My email is \( \mathit{harper} @ \mathbf{math} . \mathbf{colostate} . \mathbf{edu} \)</p>
+    
+    <p>If you'd like to get in contact with me this semester (spring 2020), please send an email. I'm currently interning at Sandia National Laboratory and will not be in my usual office in Weber 230.</p>
+
+  </td>
+  <td valign="top">
+    <img class="front_photo" src="harper_desk.jpg">
+  </td>
+  </tr></table>
+  
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
